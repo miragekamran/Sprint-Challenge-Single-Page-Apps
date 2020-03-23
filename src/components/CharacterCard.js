@@ -31,7 +31,7 @@ export default function CharacterCard(props) {
           <h1 style={{border: '1px solid', width: '57.5%', padding: '3px', borderRadius: '5px', backgroundColor: 'lightgray'}}>{character.name}</h1>
           <p>
             <div className='border-style' style={{border: '1px solid', width: '58.49999%', borderRadius: '5px', backgroundColor: 'lightgreen'}}>
-            <img src={character.image} alt={character.name} /><br />
+            <img src={character.image} alt={character.name} style={{borderTopLeftRadius: '5px', borderTopRightRadius: '5px'}}/><br />
               <b>Status:</b> {character.status} <br />
               <b>Species:</b> {character.species} <br />
               <b>Gender:</b> {character.gender} <br />

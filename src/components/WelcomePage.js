@@ -40,12 +40,17 @@ export default function WelcomePage() {
   return (
     <section className="welcome-page">
       <Header>
-        <h1>Welcome to the ultimate fan site!</h1>
-        <Image
-          className="main-img"
-          src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
-          alt="rick"
-        /> <br />
+        <div>
+          <h1 className='main-border' style={{borderRadius:'5px', border:'1px solid'}}>Welcome to the ultimate fan site!</h1>
+          <Image
+            className="main-img"
+            src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+            alt="rick"
+            style={{borderRadius:'5px'}}
+          /> 
+          {/* <br /> */}
+        </div>
+        
         <Link to='/characters' ><Button>Find Characters</Button></Link>
       </Header>
     </section>
